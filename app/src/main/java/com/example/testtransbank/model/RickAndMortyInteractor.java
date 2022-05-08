@@ -16,16 +16,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RickAndMortyInteractor {
 
     private static final String TAG = "RickAndMortyInteractor";
+    private List<Results> listCharacters;
 
     public interface onDetailsFetched {
 
-        void onSuccess(ArrayList<Results> results);
+        void onSuccess(ArrayList<Results> results, Info info);
         void onFailure();
         void noResults();
 
     }
 
-    public void remoteFetch(final onDetailsFetched listener) {
+    public void remoteFetch(final onDetailsFetched listener, final String query, final boolean addCharacter) {
 
         final String BASE_URL = "https://rickandmortyapi.com/";
 
@@ -35,8 +36,13 @@ public class RickAndMortyInteractor {
                 .build();
 
         RickAndMortyApiServices services = retrofit.create(RickAndMortyApiServices.class);
-        services.getCharacters()
-                .enqueue(new Callback<Characters>() {
+        Call<Characters> charactersCall;
+        if (addCharacter) {
+            charactersCall = services.getCharacters(query);
+        } else {
+            charactersCall = services.getCharacterbyQuery(query);
+        }
+        charactersCall.enqueue(new Callback<Characters>() {
                     @Override
                     public void onResponse(Call<Characters> call, Response<Characters> response) {
                         if (!response.isSuccessful()) {
@@ -50,7 +56,7 @@ public class RickAndMortyInteractor {
                             List<Results> listCharacters = contenido.getResults();
                             if (!listCharacters.isEmpty()) {
                                 Log.i(TAG, "onSuccess");
-                                listener.onSuccess((ArrayList<Results>) listCharacters);
+                                listener.onSuccess((ArrayList<Results>) listCharacters, contenido.getInfo());
                             } else {
                                 Log.e(TAG, "noResults");
                                 listener.noResults();

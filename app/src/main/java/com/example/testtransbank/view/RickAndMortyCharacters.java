@@ -108,7 +108,7 @@ public class RickAndMortyCharacters extends BaseActivity<RickAndMortyPresenter> 
         if (addCharacters) {
             adapterCharacters.addCharacters(results);
         } else {
-            adapterCharacters = new AdapterCharacters(results, getApplicationContext());
+            adapterCharacters = new AdapterCharacters(results, this);
             rv.setAdapter(adapterCharacters);
         }
         rv.addOnScrollListener(new RecyclerView.OnScrollListener() {

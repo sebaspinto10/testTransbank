@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/SplashTheme">
         <activity
+            android:name=".view.CharactersDetail"
+            android:exported="true" />
+        <activity
             android:name=".view.RickAndMortyCharacters"
             android:exported="true">
             <intent-filter>

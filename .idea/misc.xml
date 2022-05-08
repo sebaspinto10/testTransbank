@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/drawable/ic_error_grey_24dp.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/drawable/splash_screen.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/layout/activity_characters_detail.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/layout/activity_rick_and_morty_characters.xml" value="0.25" />
         <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/layout/card_view_characters.xml" value="0.25" />

@@ -45,7 +45,6 @@ public class RickAndMortyPresenter extends BasePresenter implements RickAndMorty
             view.hideSpinKitViewr();
             view.showCharactersDetails(results, info.getNext(), true);
         }
-
     }
 
     @Override

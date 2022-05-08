@@ -6,17 +6,23 @@ import java.util.ArrayList;
 
 public interface RickAndMortyView {
 
+    void initializeUI();
+
     void showProgressBar();
 
     void hideProgressBar();
+
+    void showSpinKitView();
+
+    void hideSpinKitViewr();
 
     void showCharacters();
 
     void hideCharacters();
 
-    void showCharactersDetails(ArrayList<Results> results);
+    void showCharactersDetails(ArrayList<Results> results, String next, boolean addCharacters);
 
-    void fetchCharacters();
+    void fetchCharacters(String query);
 
     void showDateFetchError();
 

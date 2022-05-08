@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/drawable/ic_error_grey_24dp.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/drawable/splash_screen.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/layout/activity_rick_and_morty_characters.xml" value="0.25" />
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/layout/card_view_characters.xml" value="0.25" />
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Sebastian Pinto/Documents/testTransbank/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

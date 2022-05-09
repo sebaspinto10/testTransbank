@@ -30,6 +30,7 @@
             android:layout_weight="7"
             android:background="@drawable/search_view"
             app:iconifiedByDefault="false"
+            android:focusable="false"
             app:queryHint="Search Character" />
     </LinearLayout>
 

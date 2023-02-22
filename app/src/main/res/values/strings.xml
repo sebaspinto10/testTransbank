@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">testTransbank</string>
+    <string name="image_character">Imagen del personaje</string>
+    <string name="character_name">Rick</string>
+    <string name="character_status">Alive</string>
+    <string name="character_species">Human</string>
+    <string name="detail_print">Imprimir</string>
+    <string name="tvError">Error al obtener datos del servidor</string>
+</resources>
